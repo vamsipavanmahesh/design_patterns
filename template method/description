@@ -1,0 +1,19 @@
+A template method is method on superclass, which defines an algorithm or series of steps(which are abstract)
+
+The template method itself cannot be over ridden
+
+Series of steps needs to be implemented by the subclasses
+
+Superclass provides hooks so that, subclass can skip couple of steps in the algorithm when needed
+
+-----
+Code:
+
+In this folder, `TeaPreparation` has a template method called `preapre` which has series
+of steps in order to prepare the tea.
+
+Subclasses like RegularTea and SugarLessTea, can inherit the default methods provided or override them
+
+Implement the methods that are not implemented
+
+and use the hooks to add sugar or not
